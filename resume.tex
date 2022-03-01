@@ -1,0 +1,68 @@
+\documentclass{resume}
+
+\usepackage[left=0.75in,top=0.2in,right=0.75in,bottom=0.2in]{geometry}
+\usepackage{hyperref}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Vlad Temian}
+\address{vladtemian@gmail.com}
+\relocate{I'm willing to relocate in EU/UK}
+\phone{+40740722577}
+
+\begin{document}
+
+\begin{rSection}{Experience}
+
+    \begin{rSubsection}{Presslabs}{10/2013 - 04/2018, 03/2019 - present}{}{}
+      We’re open-sourcing WordPress hosting using Kubernetes operators. Currently, I'm focusing on migrating all of our clients to Kubernetes. Previous projects:
+        \begin{itemize}
+            \setlength\itemsep{-0.3em}
+            \item Integrated Kubernetes with the old infrastructure and systems, using Go to synchronize the state between them.
+            \item Lead a team of 4 people that were in charge of designing and implementing the client facing and operational dashboard. I’ve refactored old services (site deployment and operations, Git integration, SSL certificates pipeline) and integrated new ones (contracts/payment gateways/logs/metrics), written using Python/Django/MySql/Celery/Redis on top of Kubernetes.
+            \item Designed and implemented a FUSE filesystem, written in Python, on top of Git, called \href{https://github.com/presslabs/gitfs.git}{Gitfs}. It’s open-source and it was used in production as ‘Git for SFTP’. Battle-tested with hundreds of running instances, on individual machines.
+            \item Created a cache invalidation system for the edge network.
+            \item I’m active in maintaining the current infrastructure with various devops operations.
+        \end{itemize}
+    \end{rSubsection}
+
+    \begin{rSubsection}{Gorgias}{04/2018 - 03/2019}{}{}
+        \item Contractor for a seed startup, that automates customer support for e-commerce.
+        \begin{itemize}
+            \setlength\itemsep{-0.3em}
+            \item Created and maintained data integrations. It involved both client-facing (React) and backend work (Python/Flask/Postgres/Rabbitmq).
+            \item Implemented client facing features, with direct revenue impact. It involved data processing and asynchronous logic.
+            \item Improve and maintain the infrastructure on top of Kubernetes. Automated the staging cluster provisioning.
+        \end{itemize}
+    \end{rSubsection}
+
+    \begin{rSubsection}{SimplySocial}{06/2012 - 12/2013}{}{}
+        \item Social media analysis and content management startup. I’ve worked on backend and infrastructure.
+        \begin{itemize}
+            \setlength\itemsep{-0.3em}
+            \item Worked on monitoring, alerting and alarms system.
+            \item Developed the integration with Linkedin.
+        \end{itemize}
+    \end{rSubsection}
+
+    \begin{rSubsection}{Mindquilt}{06/2011 - 08/2011}{}{}
+        \item Implemented Google App Store integration for main based product and I worked on the Bing search integration.
+    \end{rSubsection}
+
+\end{rSection}
+
+\begin{rSection}{Education}
+    \begin{rSubsection}{West University of Timisoara}{2013 - 2016}{}{}
+    \item B.S. in Computer Science at the Faculty of Computer Science and Mathematics
+    \end{rSubsection}
+\end{rSection}
+
+\begin{rSection}{Projects}
+    \begin{itemize}
+       \setlength\itemsep{-0.3em}
+       \item Meetups co/organized: RoPythonTM, Algorithms Meetup, Hack\&Tell, Code4Romania.
+       \item Various Python libraries: \href{https://github.com/presslabs/gitfs}{gitfs}, \href{https://github.com/vtemian/django-server-timing}{django-server-timing}, \href{https://github.com/vtemian/buffpy}{buffpy}, \href{https://github.com/presslabs/zipa}{zipa}.
+       \item Jury Member for \href{https://infoeducatie.ro}{Infoeducatie} (National Contest for Computer Science high school students). Helped to migrate the old site to a single page app, written in React.
+    \end{itemize}
+\end{rSection}
+
+\end{document}
