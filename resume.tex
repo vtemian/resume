@@ -1,69 +1,66 @@
 \documentclass{resume}
 
-\usepackage[left=0.75in,top=0.2in,right=0.75in,bottom=0.2in]{geometry}
+\usepackage[left=0.5in,top=0.3in,right=0.5in,bottom=0.3in]{geometry}
 \usepackage{hyperref}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \name{Vlad Temian}
-\address{vlad@qed.team}
+\address{vladtemian@gmail.com}
 
 \begin{document}
 
 \begin{rSection}{Experience}
-    \begin{rSubsection}{QED}{09/2020 - present}{}{}
-        \item We bootstrap and scale startups - \href{https://qed.builders}{QED}
+    \begin{rSubsection}{TheSandbox (Post-acquisition)}{2024 - present}{}{}
+        \item Principal Engineer - Own all technology decisions and strategy
         \begin{itemize}
-            \setlength\itemsep{-0.3em}
-	    \item \href{https://www.sandbox.game/en/}{Sandbox} - Principal Engineer - Leading and scaling high-performing engineering teams.
-            \item Tagarer - Research and Devops - Managed MLOps for processing thousands of documents and extracting meaningful insights.
-            \item Lektrico - Technical Lead - Developed a React Native app for managing EV chargers..
-            \item Lektrify - Devops - Designed and implemented infrastructure and automations for microservices on AWS using Terraform to manage EV chargers.
-            \item HeyLady - Backend and Devops - Designed and implemented the backend for an LMS focused on learning English through social meetings using NestJS and Heroku.
+            \setlength\itemsep{-0.4em}
+            \item Lead technical integration post-acquisition, ensuring seamless transition
+            \item Simplified release processes and introduced engineering best practices
+            \item Automated workflows using AI (code reviews, changelogs, documentation)
+            \item Maintain ownership of all tech-related decisions across the organization
         \end{itemize}
     \end{rSubsection}
-
-    \begin{rSubsection}{Knowledgecoop (ex Mindquilt)}{11/2020 - 2022}{}{}
-        \item LMS for the mortgage industry; rewrote the entire app using Next.js, Hasura, and GraphQL.
+    \begin{rSubsection}{QED}{09/2020 - 2024}{}{}
+        \item \href{https://qed.builders}{CTO} - We bootstrap and scale startups - \textbf{(Acquired by TheSandbox)}
         \begin{itemize}
-            \setlength\itemsep{-0.3em}
-            \item Implemented a complete analytics infrastructure using Clickhouse.
-            \item Conducted infrastructure and database improvements, including migrating from MySQL to PostgreSQL.
+            \setlength\itemsep{-0.4em}
+            \item Scaled engineering teams from 0 to 24 engineers - hired, onboarded, and integrated talent
+            \item Hiring philosophy focused on finding doers with strong self-management and curiosity
+            \item Tagarer - Built MLOps infrastructure for processing thousands of documents and extracting insights
+            \item Lektrico/Lektrify - Led React Native app development for EV chargers, designed AWS/Terraform infrastructure
+            \item HeyLady - Architected backend for English learning LMS using NestJS and Heroku
+            \item POC Projects - Hypereal.ai (real-time RAG system), Sensei (skill-based blockchain fighting game)
         \end{itemize}
     \end{rSubsection}
-
+    \begin{rSubsection}{Knowledgecoop}{11/2020 - 2022}{}{}
+        \item LMS for the mortgage industry - Complete rewrite using modern stack
+        \begin{itemize}
+            \setlength\itemsep{-0.4em}
+            \item Rewrote entire application using Next.js, Hasura, and GraphQL
+            \item Implemented complete analytics infrastructure using Clickhouse
+            \item Led database migration from MySQL to PostgreSQL with zero downtime
+        \end{itemize}
+    \end{rSubsection}
     \begin{rSubsection}{Presslabs}{10/2013 - 04/2018, 03/2019 - 09/2020}{}{}
-        \item We’re open-sourcing WordPress hosting using Kubernetes operators.
+        \item We’re open-sourcing WordPress hosting using Kubernetes operators
         \begin{itemize}
-            \setlength\itemsep{-0.3em}
-            \item Integrated Kubernetes with legacy infrastructure using Go to synchronize states between systems.
-            \item Lead a team of 4 people that were in charge of designing and implementing the client facing and operational dashboard. I’ve refactored old services (site deployment and operations, Git integration, SSL certificates pipeline) and integrated new ones (contracts/payment gateways/logs/metrics), written using Python/Django/MySql/Celery/Redis on top of Kubernetes.
-            \item Designed and implemented a FUSE filesystem, written in Python, on top of Git, called \href{https://github.com/presslabs/gitfs.git}{Gitfs}. It’s open-source and it was used in production as ‘Git for SFTP’. Battle-tested with hundreds of running instances, on individual machines.
-            \item Developed a cache invalidation system for the edge network.
-            \item Maintained the infrastructure with various DevOps operations.
+            \setlength\itemsep{-0.4em}
+            \item Led team of 4 building client dashboard. Refactored services and integrated payment gateways (Python/Django/K8s)
+            \item Created \href{https://github.com/presslabs/gitfs.git}{Gitfs} - FUSE filesystem on Git for SFTP, battle-tested with hundreds of instances
+            \item Integrated Kubernetes with legacy infrastructure using Go
         \end{itemize}
     \end{rSubsection}
-
     \begin{rSubsection}{Gorgias}{04/2018 - 03/2019}{}{}
-        \item Automates customer support for e-commerce.
+        \item Customer support automation for e-commerce
         \begin{itemize}
-            \setlength\itemsep{-0.3em}
-	    \item Created and maintained data integrations, involving both client-facing (React) and backend work (Python/Flask/Postgres/RabbitMQ).
-            \item Implemented client-facing features that directly impacted revenue, involving data processing and asynchronous logic.
-            \item Improved and maintained the infrastructure on Kubernetes and automated the provisioning of staging clusters.
+            \setlength\itemsep{-0.4em}
+            \item Built and maintained data integrations with React frontend and Python/Flask/PostgreSQL backend
+            \item Implemented client-facing features directly impacting revenue through data processing
+            \item Automated provisioning of Kubernetes staging clusters for development efficiency
         \end{itemize}
     \end{rSubsection}
-
     \begin{rSubsection}{SimplySocial}{06/2012 - 12/2013}{}{}
-        \item Social media analysis and content management startup
-        \begin{itemize}
-            \setlength\itemsep{-0.3em}
-            \item Developed monitoring, alerting, and alarms systems.
-            \item Integrated the platform with LinkedIn.
-        \end{itemize}
-    \end{rSubsection}
-
-    \begin{rSubsection}{Mindquilt}{06/2011 - 08/2011}{}{}
-        \item Implemented Google App Store integration for the main product and contributed to Bing search integration.
+        \item Developed monitoring/alerting systems. Integrated LinkedIn for social media analysis platform
     \end{rSubsection}
 
 \end{rSection}
@@ -74,12 +71,13 @@
     \end{rSubsection}
 \end{rSection}
 
-\begin{rSection}{Projects}
+\begin{rSection}{Projects \& Speaking}
     \begin{itemize}
        \setlength\itemsep{-0.3em}
-       \item Meetups co/organized: Web3, RoPythonTM, Algorithms Meetup, Hack\&Tell, Code4Romania.
-       \item Various Python libraries: \href{https://github.com/presslabs/gitfs}{gitfs}, \href{https://github.com/vtemian/django-server-timing}{django-server-timing}, \href{https://github.com/vtemian/buffpy}{buffpy}, \href{https://github.com/presslabs/zipa}{zipa}.
-       \item Jury Member for \href{https://infoeducatie.ro}{Infoeducatie} (National Contest for Computer Science high school students). Helped migrate the old site to a React-based single-page app.
+       \item International Conference Speaker on scaling teams and products: EDCON, ETH Milan, ETH Belgrade, ETH Bucharest, NFT Bucharest
+       \item Meetups organized: agentic.tm, Web3, co-organized RoPythonTM, Algorithms Meetup, Hack\&Tell, Code4Romania
+       \item Various Python libraries: \href{https://github.com/presslabs/gitfs}{gitfs}, \href{https://github.com/vtemian/django-server-timing}{django-server-timing}, \href{https://github.com/vtemian/buffpy}{buffpy}, \href{https://github.com/presslabs/zipa}{zipa}
+       \item Jury Member for \href{https://infoeducatie.ro}{Infoeducatie} National CS Contest
     \end{itemize}
 \end{rSection}
 
