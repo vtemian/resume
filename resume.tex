@@ -1,84 +1,82 @@
 \documentclass{resume}
 
-\usepackage[left=0.5in,top=0.3in,right=0.5in,bottom=0.3in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[left=0.4in,top=0.15in,right=0.4in,bottom=0.15in]{geometry}
 \usepackage{hyperref}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\renewcommand{\addressskip}{}
+\renewcommand{\nameskip}{\smallskip}
 \name{Vlad Temian}
-\address{vladtemian@gmail.com}
+\address{vladtemian@gmail.com \\ Timi\c{s}oara, Romania}
+\phone{\href{https://github.com/vtemian}{github.com/vtemian} \\ \href{https://linkedin.com/in/vtemian}{linkedin/vtemian} \\ \href{https://blog.vtemian.com}{blog.vtemian.com}}
 
 \begin{document}
 
+\begin{center}
+\em Founding engineer / CTO with agent-tooling depth. Ex-CTO, acquired by The Sandbox (Animoca Brands).\\
+Shipping open-source agent dev tools; running Timi\c{s}oara's agentic dev community.
+\end{center}
+\smallskip
+
+\begin{rSection}{Skills}
+\textbf{Languages:} Python, TypeScript, Bash. \textbf{AI / Agents:} MCP, Claude API, OpenAI API, RAG, agent frameworks, prompt engineering and context management at scale. \textbf{Infra:} Kubernetes, Terraform, AWS, GCP, Cloudflare, Docker. \textbf{Data:} PostgreSQL, MySQL, ClickHouse, Redis. \textbf{Frontend / Mobile:} React, React Native, Next.js, Nuxt.js, NestJS.
+\end{rSection}
+
 \begin{rSection}{Experience}
-    \begin{rSubsection}{TheSandbox (Post-acquisition)}{2024 - present}{}{}
-        \item Principal Engineer - Own all technology decisions and strategy
+    \begin{rSubsection}{The Sandbox (Animoca Brands), Principal Engineer}{2024 - Present}{}{}
         \begin{itemize}
             \setlength\itemsep{-0.4em}
-            \item Lead technical integration post-acquisition, ensuring seamless transition
-            \item Simplified release processes and introduced engineering best practices
-            \item Automated workflows using AI (code reviews, changelogs, documentation)
-            \item Maintain ownership of all tech-related decisions across the organization
+            \item Built the AI-development practice from zero across a 15-engineer web squad: drove AI-generated code from 0\% to $\sim$95\% in 6 months. Owned the rollout end-to-end (internal talks, workflows, guardrails, agent skills, team setup)
+            \item Streamlined releases from 5-7 people across 3 roles (QA, engineering, devops) per release down to 1 QA + 1 engineer on a weekly cadence
+            \item Delivered 30-40\% cost reduction through infrastructure/tooling optimization and AI-driven replacements
+            \item Set and shepherded engineering standards (code review, testing, branching, deploy); technical voice in product, infra and hiring decisions
         \end{itemize}
     \end{rSubsection}
-    \begin{rSubsection}{QED}{09/2020 - 2024}{}{}
-        \item \href{https://qed.builders}{CTO} - We bootstrap and scale startups - \textbf{(Acquired by TheSandbox)}
+    \begin{rSubsection}{QED, Co-founder \& CTO}{09/2020 - 2024}{}{}
+        \item \href{https://qed.builders}{Venture studio} that bootstrapped and scaled startups. \textbf{Acquired by The Sandbox (Animoca Brands)}
         \begin{itemize}
             \setlength\itemsep{-0.4em}
-            \item Scaled engineering teams from 0 to 24 engineers - hired, onboarded, and integrated talent
-            \item Hiring philosophy focused on finding doers with strong self-management and curiosity
-            \item Tagarer - Built MLOps infrastructure for processing thousands of documents and extracting insights
-            \item Lektrico/Lektrify - Led React Native app development for EV chargers, designed AWS/Terraform infrastructure
-            \item HeyLady - Architected backend for English learning LMS using NestJS and Heroku
-            \item POC Projects - Hypereal.ai (real-time RAG system), Sensei (skill-based blockchain fighting game)
-        \end{itemize}
-    \end{rSubsection}
-    \begin{rSubsection}{Knowledgecoop}{11/2020 - 2022}{}{}
-        \item LMS for the mortgage industry - Complete rewrite using modern stack
-        \begin{itemize}
-            \setlength\itemsep{-0.4em}
-            \item Rewrote entire application using Next.js, Hasura, and GraphQL
-            \item Implemented complete analytics infrastructure using Clickhouse
-            \item Led database migration from MySQL to PostgreSQL with zero downtime
+            \item Scaled engineering 0 $\rightarrow$ 24 across portfolio companies; per company, owned stack, architecture and team-shape calls
+            \item \textbf{Lektrico} (EV charging): built React Native iOS/Android app from zero, designed AWS/Terraform infra, wrote microservices for OTA firmware updates and MQTT IoT comms. Now ships $\sim$2,000 chargers/year across RO, IT, FR
+            \item Other portfolio work: Knowledgecoop (mortgage LMS, MySQL $\rightarrow$ PostgreSQL zero-downtime migration; Next.js + Hasura, ClickHouse analytics), HeyLady (NestJS LMS, 120+ countries), Tagarer (MLOps), Hypereal (real-time RAG)
         \end{itemize}
     \end{rSubsection}
     \begin{rSubsection}{Presslabs}{10/2013 - 04/2018, 03/2019 - 09/2020}{}{}
-        \item We’re open-sourcing WordPress hosting using Kubernetes operators
+        \item Open-source WordPress hosting on Kubernetes operators
         \begin{itemize}
             \setlength\itemsep{-0.4em}
-            \item Led team of 4 building client dashboard. Refactored services and integrated payment gateways (Python/Django/K8s)
-            \item Created \href{https://github.com/presslabs/gitfs.git}{Gitfs} - FUSE filesystem on Git for SFTP, battle-tested with hundreds of instances
-            \item Integrated Kubernetes with legacy infrastructure using Go
+            \item Created \href{https://github.com/presslabs/gitfs}{Gitfs} (2.6K\textsuperscript{+} stars on GitHub), a FUSE filesystem on Git for SFTP. Ran 500-600 production mounts per server in production at Presslabs
+            \item Led team of 4 on the client dashboard (Python/Django/K8s); integrated payment gateways and bridged Kubernetes with legacy infra (Go)
         \end{itemize}
     \end{rSubsection}
     \begin{rSubsection}{Gorgias}{04/2018 - 03/2019}{}{}
-        \item Customer support automation for e-commerce
+        \item Customer support automation for e-commerce (YC alum, React + Python/Flask/PostgreSQL)
         \begin{itemize}
             \setlength\itemsep{-0.4em}
-            \item Built and maintained data integrations with React frontend and Python/Flask/PostgreSQL backend
-            \item Implemented client-facing features directly impacting revenue through data processing
-            \item Automated provisioning of Kubernetes staging clusters for development efficiency
+            \item Shipped revenue-attribution feature linking CS agent recommendations to upsell revenue; built automated K8s staging provisioning from scratch
         \end{itemize}
     \end{rSubsection}
-    \begin{rSubsection}{SimplySocial}{06/2012 - 12/2013}{}{}
-        \item Developed monitoring/alerting systems. Integrated LinkedIn for social media analysis platform
-    \end{rSubsection}
+\end{rSection}
 
+\begin{rSection}{Selected Projects}
+    \begin{itemize}
+        \setlength\itemsep{-0.3em}
+        \item \textbf{\href{https://www.npmjs.com/package/micode}{micode} + \href{https://github.com/vtemian/octto}{octto}} (670\textsuperscript{+} GitHub stars combined, $\sim$1.8K monthly npm installs): OpenCode plugin suite. micode adds a structured Brainstorm $\rightarrow$ Plan $\rightarrow$ Implement workflow with session continuity; octto turns terminal agent flows into an interactive browser UI for AI brainstorming
+        \item \textbf{\href{https://claudebin.com}{claudebin}}: share and resume Claude Code sessions via a single URL, with embeddable iframes. \href{https://news.ycombinator.com/item?id=47073488}{Show HN}, growing daily
+        \item Also building: \textbf{\href{https://github.com/vtemian/zag}{zag}} (agent dev env in Zig), \textbf{\href{https://www.npmjs.com/package/@agentprobe/core}{agentprobe}} (passive observability for coding agents, 4 providers), \textbf{\href{https://opnble.dev}{opnble}} (one-click run-any-repo desktop), \textbf{\href{https://cursouls.xyz}{cursouls}}. Earlier: \href{https://github.com/vtemian/django-server-timing}{django-server-timing}, \href{https://github.com/vtemian/buffpy}{buffpy}, \href{https://github.com/presslabs/zipa}{zipa}
+    \end{itemize}
+\end{rSection}
+
+\begin{rSection}{Community}
+    \begin{itemize}
+       \setlength\itemsep{-0.3em}
+       \item Co-founder, organizer and speaker, \textbf{agentic.tm} (Timi\c{s}oara agentic dev community). Co-organizer: RoPython TM, Algorithms Meetup, Hack\&Tell, Code4Romania. Jury, \href{https://infoeducatie.ro}{Infoeducatie} National CS Contest
+    \end{itemize}
 \end{rSection}
 
 \begin{rSection}{Education}
-    \begin{rSubsection}{West University of Timisoara}{2013 - 2016}{}{}
-    \item B.S. in Computer Science at the Faculty of Computer Science and Mathematics
-    \end{rSubsection}
-\end{rSection}
-
-\begin{rSection}{Projects \& Speaking}
-    \begin{itemize}
-       \setlength\itemsep{-0.3em}
-       \item International Conference Speaker on scaling teams and products: EDCON, ETH Milan, ETH Belgrade, ETH Bucharest, NFT Bucharest
-       \item Meetups organized: agentic.tm, Web3, co-organized RoPythonTM, Algorithms Meetup, Hack\&Tell, Code4Romania
-       \item Various Python libraries: \href{https://github.com/presslabs/gitfs}{gitfs}, \href{https://github.com/vtemian/django-server-timing}{django-server-timing}, \href{https://github.com/vtemian/buffpy}{buffpy}, \href{https://github.com/presslabs/zipa}{zipa}
-       \item Jury Member for \href{https://infoeducatie.ro}{Infoeducatie} National CS Contest
-    \end{itemize}
+\item \textbf{B.S. Computer Science}, West University of Timi\c{s}oara, Faculty of Computer Science and Mathematics \hfill 2013 - 2016
 \end{rSection}
 
 \end{document}
